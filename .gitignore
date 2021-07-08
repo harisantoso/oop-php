@@ -1,0 +1,15 @@
+
+# dalam file .gitignore isi dengan script berikut sebagai
+# penanda untuk file, extention, folder untuk diabaikan.
+
+# co: nama file yg diabaikan
+# script: config.txt
+
+# folder yg akan diabaikan
+# data/
+
+# co: mengabaikan file yg exe
+# script: *.exe
+
+# co: nama file yg diabaikan
+Catatan.txt
