@@ -35,7 +35,7 @@ $produk4 = new Produk();
 $produk4->judul = "Uncharted";
 $produk4->penulis = "Neil Druckmann";
 $produk4->penerbit = "Sony Computer";
-$produk4->harga = 200000;
+$produk4->harga = 2500000;
 
 
 echo "Komik: " . $produk3->getLable();
