@@ -28,11 +28,11 @@ class Produk
 
   public function getInfoLengkap()
   {
-    $str = "{$this->tipe} : {$this->judul} | {$this->getLable()} Rp. {{$this->harga})}";
+    $str = "{$this->tipe} : {$this->judul} | {$this->getLable()} (Rp. {$this->harga})";
     if ($this->tipe == "Komik") {
       $str .= " - {$this->jmlHalaman} Halaman.";
     } else if ($this->tipe == "Gim") {
-      $str .= " - {$this->waktuMain} Jam.";
+      $str .= " ~ {$this->waktuMain} Jam.";
     }
 
     return $str;
