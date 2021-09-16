@@ -1,7 +1,5 @@
 <?php
 
-use Produk as GlobalProduk;
-
 class Produk
 {
   public $judul,
@@ -23,13 +21,21 @@ class Produk
   }
 }
 
+class CetakInfoProduk
+{
+  public function cetak(Produk $produk)
+  {
+    return $str = "{$produk->judul} | {$produk->getLable()} (Rp. {$produk->harga})";
+  }
+}
+
 $produk1 = new Produk("Naruto", "Masashi Kishimoto", "Shonen Jump", 30000);
 $produk2 = new Produk("Uncharted", "Neil Druckmann", "Sony Computer", 2500000);
-$produk3 = new Produk("Dragon Bll");
-
 
 echo "Komik: " . $produk1->getLable();
 echo "<br>";
 echo "Game: " . $produk2->getLable();
 echo "<br>";
-var_dump($produk3);
+
+$infoProduk1 = new CetakInfoProduk();
+echo $infoProduk1->cetak($produk1);
