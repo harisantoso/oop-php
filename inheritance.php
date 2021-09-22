@@ -47,7 +47,7 @@ class Gim extends Produk
   {
     // $str = "Gim : {$this->judul} | {$this->getLable()} (Rp. {$this->harga}) ~ {$this->waktuMain} Jam.";
     // beda penulisan saja
-    return $str = "Gim : " . $this->judul . " | " . $this->getLable() . " (Rp" . $this->harga . ") ~ " . $this->waktuMain . " Jam.";
+    return $str = "Gim : " . $this->judul . " | " . $this->getLable() . " (Rp.  " . $this->harga . ") ~ " . $this->waktuMain . " Jam.";
   }
 }
 
